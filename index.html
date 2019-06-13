@@ -21,22 +21,69 @@
       </div>
 
       <div class="result">
-        <p>Paper covers Rock. You win!</p>
+        <p>Please select your move!</p>
       </div>
 
       <div class="choices">
         <div class="choice">
-          <div id="rock" class="option"></div>
+          <button onClick="playerChoice('Rock')" class="option">Rock</button>
         </div>
         <div class="choice">
-          <div id="paper" class="option"></div>
+          <button onClick="playerChoice('Paper')" class="option">Paper</button>
         </div>
         <div class="choice">
-          <div id="scissors" class="option"></div>
+          <button onClick="playerChoice('Scissors')" class="option">
+            Scissors
+          </button>
         </div>
       </div>
+
+      <div class="reset">
+        <button onClick="reset()">Reset Game</button>
+      </div>
+
+      <table class="table">
+        <tr>
+          <th>Moves</th>
+          <th>Player</th>
+          <th>Computer</th>
+          <th>Result</th>
+        </tr>
+        <tr class="tableBody"></tr>
+
+        <tr>
+          <td class="moves0"></td>
+          <td class="player0"></td>
+          <td class="computer0"></td>
+          <td class="result0"></td>
+        </tr>
+        <tr>
+          <td class="moves1"></td>
+          <td class="player1"></td>
+          <td class="computer1"></td>
+          <td class="result1"></td>
+        </tr>
+        <tr>
+          <td class="moves2"></td>
+          <td class="player2"></td>
+          <td class="computer2"></td>
+          <td class="result2"></td>
+        </tr>
+        <tr>
+          <td class="moves3"></td>
+          <td class="player3"></td>
+          <td class="computer3"></td>
+          <td class="result3"></td>
+        </tr>
+        <tr>
+          <td class="moves4"></td>
+          <td class="player4"></td>
+          <td class="computer4"></td>
+          <td class="result4"></td>
+        </tr>
+      </table>
     </main>
 
-    <script src="app.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
