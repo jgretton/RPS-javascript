@@ -49,13 +49,17 @@ const reset = () => {
     movesLength = null;
     userScore = 0;
     compScore = 0;
-    moves = [];
 
     document.querySelector('.result').innerHTML = result;
     document.getElementById('user-score').innerHTML = userScore;
     document.getElementById('comp-score').innerHTML = compScore;
 
-    console.log(moves);
+    for (let i = 0; i < moves.length; i++) {
+        document.querySelector('.player' + i).innerHTML = "";
+        document.querySelector('.computer' + i).innerHTML = "";
+        document.querySelector('.result' + i).innerHTML = "";
+    }
+    moves = [];
 }
 
 const playerChoice = (move) => {
