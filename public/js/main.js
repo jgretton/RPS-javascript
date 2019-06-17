@@ -1,31 +1,3 @@
-/* 
-
-- User clicks on a move 
- [x]   - clicking the button activates an onclick event where the move is passed as parameter
- [x]      -- playerMove(move)  -> onClick="playerMove(rock)"
- [x]   - inside playerMove
- []       - bring up correct image for html display
- [x]       - set move to a const
- [x]       - call AiMove
- [x]   - inside Ai move
- [x]       - For now, create random move.
- [x]       - call setResult
- [x]   - inside setResult
- [x]       - create switch statement to calculate winner
- [x]       - set winner variable
- [x]       - increment corect score
- [x]       - call getResult
- [x]   - inside getResult
- [x]       - set player move, aiMove, winner as an object to variable
- [x]       - push object to array to Moves
- [x]       - set limit for amount of moves stored.
- [x]       - call logResult
- [x]   - inside LogResult
- [x]       - display results array in table
-    
-
-*/
-
 let userMove,
     compMove,
     result,
